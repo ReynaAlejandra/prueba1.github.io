@@ -1,0 +1,244 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('./img/fondo.png');
+    background-repeat: repeat;
+}
+
+nav {
+    background-color: #003d66;
+    background-size: auto;
+    color: #fff;
+    /* padding: 1%; */
+    width: 100%;
+    max-width: 100%;
+    /* border-bottom: 1px solid #111b57; */
+}
+
+nav .rrss1 {
+    list-style-type: none;
+    padding: 0;
+    margin: 2px 0 0 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    flex-direction: row;
+}
+
+nav .rrss1 li {
+    display:inline-block;
+    /* margin-right: 2%; */
+    /* width: 20%;
+    height: auto;*/
+    margin-right: 50px !important;
+    margin-left: 50px !important; 
+    flex-grow: 1;
+    text-align: center;
+    flex-basis: 100px;
+    flex-grow: 2;
+}
+
+/* nav .rrss1 li:last-child {
+    margin-right: 0;
+} */
+/* 
+nav .rrss1 img {
+    width: 100%;
+} */
+
+nav .rrss1 img {
+    width: 30px;
+    height: auto;
+    /* text-align: center; */
+}
+/* nav .rrss1 img:last-child {
+    margin-right: 0;
+} */
+
+
+
+
+header {
+    /* 
+    background-color: #130e61c7; */
+    background-image: url('./img/portal.jpg');
+    background-repeat: repeat; 
+    background-size: cover;
+    color: #fff;
+    padding: 5%;
+    width: 100%;
+    max-width: 100%;
+    /* border-bottom: 1px solid #111b57; */
+}
+
+.accion {
+    text-align: center;
+    margin-top: 3%;
+    margin-right: 10%;
+    margin-left: 10%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    font-style: italic;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    perspective: 1000px;
+    align-items: stretch;
+    margin-top: 50px;
+    max-width: 100%;
+    overflow-x: hidden;
+    color: #ffffff;
+
+}
+
+.container figure {
+    flex: 0 0 calc(33.333% - 2%);
+    margin-bottom: 2%;
+}
+
+.imgtran {
+    width: 100%;
+    height: auto;
+    border-radius: 20%;
+    transition: transform 0.3s ease;
+    transform: rotateY(10deg)
+}
+.imgtran:hover {
+    transform: scale(1.1);
+}
+.imgtran1 {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    transform: rotateY(15deg)
+}
+.imgtran1:hover {
+    transform: scale(1.1);
+}
+
+
+.description {
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.subtitles {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .container figure {
+        flex: 0 0 calc(100% - 2%);
+    }
+    nav .rrss1 {
+        justify-content: flex-end;
+    }
+    nav .rrss1 li {
+        margin-right: 1%;
+    }
+}
+
+@media (max-width: 576px) {
+    .container figure {
+        flex: 0 0 calc(100% - 2%);
+    }
+    nav .rrss1 {
+        justify-content: flex-end;
+    }
+    nav .rrss1 li {
+        margin-right: 1%;
+    }
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 1200px) {
+    nav .rrss1 li {
+        margin-right: 3%; /* Espacio más amplio entre los iconos en pantallas grandes */
+    }
+}
+
+
+
+
+.portalED {
+    background-color: #ffffff;
+    color:  #14293f;
+    padding: 4%;
+    text-align: center;
+}
+
+.portalED h1 {
+    margin: 0;
+}
+
+
+
+
+
+.floating-menu {
+    position: fixed;
+    bottom: 50%;
+    right: 20px;
+    z-index: 1000;
+}
+
+.floating-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.floating-menu ul li {
+    margin-bottom: 3px;
+}
+
+.floating-menu ul li a {
+    display: block;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #003d66;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+.floating-menu ul li a:hover {
+    background-color: #7d93a1e3;
+}
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #14293f;
+    padding: 1%;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+.mingob {
+    color: white;
+    text-align: right;
+    font-size: 0.8vw
+}
+
+
